@@ -803,7 +803,7 @@ Version.LayoutOrder = 100
 Version.Position = UDim2.new(0, 0, 1, -5)
 Version.Size = UDim2.new(1, 0, 0, 20)
 Version.Font = Enum.Font.Gotham
-Version.Text = "v1.0.0 | made by zzerexx#3970"
+Version.Text = "v1.0.0 | made by sirshinhub
 Version.TextColor3 = Color3.fromRGB(255, 255, 255)
 Version.TextSize = 14.000
 
