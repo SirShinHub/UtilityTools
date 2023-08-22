@@ -3,6 +3,6 @@ getgenv().Settings = {
     ["Lock Mouse Position Keybind"] = "KeypadOne",
     ["Right Click"] = false,
     ["GUI"] = true,
-    ["Delay"] = 0
+    ["Delay"] = 0.3
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SirShinHub/UtilityTools/main/EZAutoClickLibary.lua"))()
