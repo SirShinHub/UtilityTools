@@ -209,7 +209,7 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PetBlacklist"):InvokeServer(unpack(args))
 			
 		end	
-    wait(0.1)
+    wait(1)
 	end
 	
 end
