@@ -194,12 +194,20 @@ local function HUCPR_fake_script() -- active.scat
 	
 	while true do
 		if jumploop then
-		
+-- Add Script		
 local args = {
-    [1] = "Forest2"
+    [1] = "7"
 }
 
 game:GetService("ReplicatedStorage").Events.PlayerPressedKeyOnEgg:FireServer(unpack(args))
+-- Add Script 2
+wait(3)
+local args = {
+    [1] = "Get"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PetBlacklist"):InvokeServer(unpack(args))
+			
 		end	
     wait(0.1)
 	end
