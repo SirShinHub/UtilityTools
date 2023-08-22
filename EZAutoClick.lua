@@ -5,4 +5,4 @@ getgenv().Settings = {
     ["GUI"] = true,
     ["Delay"] = 0
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BimbusCoder/Script/main/Auto%20Clicker.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SirShinHub/UtilityTools/main/EZAutoClickLibary.lua"))()
