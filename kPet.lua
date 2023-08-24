@@ -196,7 +196,7 @@ local function HUCPR_fake_script() -- active.scat
 		if jumploop then
 -- Add Script		
 local args = {
-    [1] = "7"
+    [1] = "8"
 }
 
 game:GetService("ReplicatedStorage").Events.PlayerPressedKeyOnEgg:FireServer(unpack(args))
