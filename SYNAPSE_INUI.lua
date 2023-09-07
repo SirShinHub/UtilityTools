@@ -564,6 +564,7 @@ local function UHGZIKW_fake_script() -- maingui.dragger
 	end)
 	
 end
+coroutine.wrap(UHGZIKW_fake_script)()
 
 local function SYHNK_fake_script() -- ImageLabel.LocalScript 
     local script = Instance.new('LocalScript', ImageLabel)
