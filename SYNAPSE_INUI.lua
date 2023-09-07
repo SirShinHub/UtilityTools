@@ -541,7 +541,7 @@ title_4.ImageRectSize = Vector2.new(138, 167)
 -- Scripts:
 
 local function UHGZIKW_fake_script() -- maingui.dragger 
-	local script = Instance.new('LocalScript', SynapseXreal)
+	local script = Instance.new('LocalScript', MainFrame)
 
 	function PopupGui()
 	
@@ -552,8 +552,6 @@ local function UHGZIKW_fake_script() -- maingui.dragger
 	end
 	
 	end
-	
-	
 	
 	game:GetService("UserInputService").InputBegan:Connect(function(key)
 	
