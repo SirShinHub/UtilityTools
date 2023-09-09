@@ -555,7 +555,7 @@ local function UHGZIKW_fake_script() -- maingui.dragger
 	
 	game:GetService("UserInputService").InputBegan:Connect(function(key)
 	
-	 if key.KeyCode == Enum.KeyCode.L then
+	 if key.KeyCode == Enum.KeyCode.Home then
 	
 	PopupGui()
 	
