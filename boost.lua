@@ -30,8 +30,8 @@ _G.Settings = {
             NoMesh = false,
             Destroy = false
         },
-			["No Explosions"] = true,	
-			["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparksle
+	    ["No Explosions"] = true,	
+	    ["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparksle
             ["FPS Cap"] = 144, -- Set this true to uncap FPS
             ["No Camera Effects"] = true,
             ["No Clothes"] = true,
