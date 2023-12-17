@@ -1,4 +1,4 @@
-_G.WaitPerAmount = 500
+_G.WaitPerAmount = 1000
 _G.Settings = {
     Players = {
             ["Ignore Me"] = true,
