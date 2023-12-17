@@ -40,7 +40,7 @@ _G.Settings = {
             ["Low Rendering"] = true,
             ["Low Quality Parts"] = true,
             ["Low Quality Models"] = true,
-            ["Reset Materials"] = false,
+            ["Reset Materials"] = true,
             ["Lower Quality MeshParts"] = true
         }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SirShinHub/UtilityTools/main/fpsboostlowestLIB.lua"))()
