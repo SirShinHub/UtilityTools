@@ -26,7 +26,7 @@ _G.Settings = {
         MeshParts = {
             LowerQuality = true,
             Invisible = false,
-            NoTexture = true,
+            NoTexture = false,
             NoMesh = false,
             Destroy = false
         },
