@@ -2,7 +2,7 @@ if not _G.Ignore then -- Updated
     _G.Ignore = {} -- Add Instances to this table to ignore them (e.g. _G.Ignore = {workspace.Map, workspace.Map2})
 end
 if not _G.WaitPerAmount then
-    _G.WaitPerAmount = 500 -- Set Higher or Lower depending on your computer's performance
+    _G.WaitPerAmount = 1000 -- Set Higher or Lower depending on your computer's performance
 end
 if _G.SendNotifications == nil then
     _G.SendNotifications = false -- Set to false if you don't want notifications
@@ -263,7 +263,7 @@ coroutine.wrap(pcall)(function()
 end)
 coroutine.wrap(pcall)(function()
     if _G.Settings["Low Rendering"] or (_G.Settings.Other and _G.Settings.Other["Low Rendering"]) then
-        settings().Rendering.QualityLevel = 8
+        settings().Rendering.QualityLevel = 10
         settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level04
         if _G.SendNotifications then
             StarterGui:SetCore("SendNotification", {
