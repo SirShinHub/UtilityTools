@@ -264,7 +264,7 @@ end)
 coroutine.wrap(pcall)(function()
     if _G.Settings["Low Rendering"] or (_G.Settings.Other and _G.Settings.Other["Low Rendering"]) then
         settings().Rendering.QualityLevel = 18
-        settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level00
+        settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level01
         if _G.SendNotifications then
             StarterGui:SetCore("SendNotification", {
                 Title = "",
