@@ -228,7 +228,7 @@ coroutine.wrap(pcall)(function()
             })
         end
         if _G.ConsoleLogs then
-            warn("Low Water Graphics Enabled")
+            warn("")
         end
     end
 end)
