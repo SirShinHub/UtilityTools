@@ -1,4 +1,4 @@
-if not _G.Ignore then
+if not _G.Ignore then -- Updated
     _G.Ignore = {} -- Add Instances to this table to ignore them (e.g. _G.Ignore = {workspace.Map, workspace.Map2})
 end
 if not _G.WaitPerAmount then
@@ -191,7 +191,7 @@ local function CheckIfBad(Instance)
 end
 if _G.SendNotifications then
     StarterGui:SetCore("SendNotification", {
-        Title = "discord.gg/rips",
+        Title = "",
         Text = "Loading FPS Booster...",
         Duration = math.huge,
         Button1 = "Okay"
@@ -212,7 +212,7 @@ coroutine.wrap(pcall)(function()
             sethiddenproperty(workspace:FindFirstChildOfClass("Terrain"), "Decoration", false)
         else
             StarterGui:SetCore("SendNotification", {
-                Title = "discord.gg/rips",
+                Title = "",
                 Text = "Your exploit does not support sethiddenproperty, please use a different exploit.",
                 Duration = 5,
                 Button1 = "Okay"
@@ -221,7 +221,7 @@ coroutine.wrap(pcall)(function()
         end
         if _G.SendNotifications then
             StarterGui:SetCore("SendNotification", {
-                Title = "discord.gg/rips",
+                Title = "",
                 Text = "Low Water Graphics Enabled",
                 Duration = 5,
                 Button1 = "Okay"
@@ -241,7 +241,7 @@ coroutine.wrap(pcall)(function()
             sethiddenproperty(Lighting, "Technology", 2)
         else
             StarterGui:SetCore("SendNotification", {
-                Title = "discord.gg/rips",
+                Title = "",
                 Text = "Your exploit does not support sethiddenproperty, please use a different exploit.",
                 Duration = 5,
                 Button1 = "Okay"
@@ -250,7 +250,7 @@ coroutine.wrap(pcall)(function()
         end
         if _G.SendNotifications then
             StarterGui:SetCore("SendNotification", {
-                Title = "discord.gg/rips",
+                Title = "",
                 Text = "No Shadows Enabled",
                 Duration = 5,
                 Button1 = "Okay"
