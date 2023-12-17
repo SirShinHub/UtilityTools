@@ -57,15 +57,15 @@ if not _G.Settings then
         },
         Other = {
             ["FPS Cap"] = 144, -- Set this true to uncap FPS
-            ["No Camera Effects"] = true,
-            ["No Clothes"] = true,
-            ["Low Water Graphics"] = true,
-            ["No Shadows"] = true,
-            ["Low Rendering"] = true,
+            ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
+            ["No Clothes"] = true, -- Removes Clothing from the game
+            ["Low Water Graphics"] = true, -- Removes Water Quality
+            ["No Shadows"] = true, -- Remove Shadows
+            ["Low Rendering"] = true, -- Lower Rendering
             ["Low Quality Parts"] = true,
             ["Low Quality Models"] = true,
             ["Reset Materials"] = true,
-            ["Lower Quality MeshParts"] = true
+            ["Lower Quality MeshParts"] = true -- Lower quality parts
         }
     }
 end
@@ -121,7 +121,7 @@ local function CheckIfBad(Instance)
             if _G.Settings["Invisible Particles"] or _G.Settings["No Particles"] or (_G.Settings.Other and _G.Settings.Other["Invisible Particles"]) or (_G.Settings.Particles and _G.Settings.Particles.Invisible) then
                 Instance.Enabled = false
             end
-            if (_G.Settings.Other and _G.Settings.Other["No Particles"]) or (_G.Settings.Particles and _G.Settings.Particles.Destroy) then
+            if (_G.Settings.Other and _G.Settings.Other["No Particles"]) or (_G.Settings.Particles and _G.Settings.Particles.Destroy) then -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparksle
                 Instance:Destroy()
             end
         elseif Instance:IsA("PostEffect") and (_G.Settings["No Camera Effects"] or (_G.Settings.Other and _G.Settings.Other["No Camera Effects"])) then
@@ -263,7 +263,7 @@ coroutine.wrap(pcall)(function()
 end)
 coroutine.wrap(pcall)(function()
     if _G.Settings["Low Rendering"] or (_G.Settings.Other and _G.Settings.Other["Low Rendering"]) then
-        settings().Rendering.QualityLevel = 10
+        settings().Rendering.QualityLevel = 8
         settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level04
         if _G.SendNotifications then
             StarterGui:SetCore("SendNotification", {
