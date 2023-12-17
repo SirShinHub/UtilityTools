@@ -1,4 +1,4 @@
-_G.WaitPerAmount = 500
+_G.WaitPerAmount = 1000
 _G.Settings = {
     Players = {
             ["Ignore Me"] = true,
@@ -8,14 +8,14 @@ _G.Settings = {
             NoMesh = false,
             NoTexture = false,
             Destroy = false,
-			LowDetail = true
+		LowDetail = true
         },
         Images = {
             Invisible = true,
             Destroy = false
         },
         Particles = {
-            Invisible = true,
+            Invisible = false,
             Destroy = false
         },
         TextLabels = {
