@@ -345,14 +345,12 @@ end)
 local Descendants = game:GetDescendants()
 local StartNumber = _G.WaitPerAmount or 500
 local WaitNumber = _G.WaitPerAmount or 500
-if _G.SendNotifications then
     StarterGui:SetCore("SendNotification", {
         Title = "",
         Text = "Checking " .. #Descendants .. " Instances...",
         Duration = 15,
         Button1 = "Okay"
     })
-end
 if _G.ConsoleLogs then
     warn("Checking " .. #Descendants .. " Instances...")
 end
