@@ -163,17 +163,17 @@ local function CheckIfBad(Instance)
             end
         elseif Instance:IsA("Model") then
             if _G.Settings["Low Quality Models"] or (_G.Settings.Other and _G.Settings.Other["Low Quality Models"]) then
-                Instance.LevelOfDetail = 1
+                Instance.LevelOfDetail = 0
             end
         elseif Instance:IsA("MeshPart") then
             if _G.Settings["Low Quality MeshParts"] or (_G.Settings.Other and _G.Settings.Other["Low Quality MeshParts"]) or (_G.Settings.MeshParts and _G.Settings.MeshParts.LowerQuality) then
-                Instance.RenderFidelity = 2
+                Instance.RenderFidelity = 0
                 Instance.Reflectance = 0
                 Instance.Material = Enum.Material.Plastic
             end
             if _G.Settings["Invisible MeshParts"] or (_G.Settings.Other and _G.Settings.Other["Invisible MeshParts"]) or (_G.Settings.MeshParts and _G.Settings.MeshParts.Invisible) then
                 Instance.Transparency = 1
-                Instance.RenderFidelity = 2
+                Instance.RenderFidelity = 0
                 Instance.Reflectance = 0
                 Instance.Material = Enum.Material.Plastic
             end
