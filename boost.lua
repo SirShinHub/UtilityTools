@@ -24,7 +24,7 @@ _G.Settings = {
             Destroy = false
         },
         MeshParts = {
-            LowerQuality = true,
+            LowerQuality = false,
             Invisible = false,
             NoTexture = false,
             NoMesh = false,
@@ -40,7 +40,7 @@ _G.Settings = {
             ["Low Rendering"] = true,
             ["Low Quality Parts"] = true,
             ["Low Quality Models"] = true,
-            ["Reset Materials"] = false,
+            ["Reset Materials"] = true,
             ["Lower Quality MeshParts"] = true
         }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SirShinHub/UtilityTools/main/fpsboostLIB.lua"))()
