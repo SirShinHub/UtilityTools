@@ -6,7 +6,7 @@ _G.Settings = {
         },
         Meshes = {
             NoMesh = false,
-            NoTexture = false,
+            NoTexture = true,
             Destroy = false,
 	    LowDetail = true
         },
@@ -26,7 +26,7 @@ _G.Settings = {
         MeshParts = {
             LowerQuality = false,
             Invisible = false,
-            NoTexture = false,
+            NoTexture = true,
             NoMesh = false,
             Destroy = false
         },
