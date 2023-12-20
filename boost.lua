@@ -19,7 +19,7 @@ _G.Settings = {
             Destroy = false
         },
         TextLabels = {
-            LowerQuality = true,
+            LowerQuality = false,
             Invisible = false,
             Destroy = false
         },
