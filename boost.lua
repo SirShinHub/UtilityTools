@@ -1,8 +1,8 @@
-_G.WaitPerAmount = 1500
+_G.WaitPerAmount = 3000
 _G.Settings = {
     Players = {
-            ["Ignore Me"] = true,
-            ["Ignore Others"] = true,
+            ["Ignore Me"] = false,
+            ["Ignore Others"] = false,
         },
         Meshes = {
             NoMesh = false,
