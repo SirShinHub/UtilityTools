@@ -348,7 +348,7 @@ local WaitNumber = _G.WaitPerAmount or 500
     StarterGui:SetCore("SendNotification", {
         Title = "",
         Text = "Checking " .. #Descendants .. " Instances...",
-        Duration = math.huge,
+        Duration = 3,
         Button1 = "Okay"
     })
 if _G.ConsoleLogs then
@@ -367,7 +367,7 @@ end
 StarterGui:SetCore("SendNotification", {
     Title = "",
     Text = "FPS Booster Loaded!",
-    Duration = math.huge,
+    Duration = 3,
     Button1 = "Okay"
 })
 warn("FPS Booster Loaded!")
